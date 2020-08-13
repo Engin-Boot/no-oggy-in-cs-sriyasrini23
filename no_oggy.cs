@@ -5,13 +5,27 @@ class NoOggyChecker
 {
   static void RemoveOggy(List<string> names)
   {
+    //-----------------Crashing Code--------------------//
+    /*
     foreach (var name in names)
     {
         if(name.StartsWith("oggy")) {
             Console.WriteLine($"Need to remove {name}!");
-            names.Remove(name);
+            names.Remove(name); //Crashing line - iterator cannot be used to manipulate list
         }
     }
+    */
+    //-------------------------------------------------//
+    for(int i= 0; i < names.Count ; i++)                     //iterator is only used as index to list
+    {
+        if (names[i].StartsWith("oggy"))
+        {
+            Console.WriteLine($"Need to remove {names[i]}!");
+            names.Remove(names[i]);
+            i--;                                            //to avoid miscalculations, removed item needs to be reduced in index
+        }
+    }
+    
   }
   static bool OggyIsRemoved(List<string> names)
   {
