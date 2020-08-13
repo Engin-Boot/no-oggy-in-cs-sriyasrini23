@@ -16,6 +16,8 @@ class NoOggyChecker
     }
     */
     //-------------------------------------------------//
+    
+    //----------------Working Code------------------------//
     for(int i= 0; i < names.Count ; i++)                     //iterator is only used as index to list
     {
         if (names[i].StartsWith("oggy"))
@@ -25,7 +27,7 @@ class NoOggyChecker
             i--;                                            //to avoid miscalculations, removed item needs to be reduced in index
         }
     }
-    
+    //-------------------------------------------------//
   }
   static bool OggyIsRemoved(List<string> names)
   {
