@@ -8,8 +8,8 @@ This program intends to remove strings containing 'oggy' from a list of strings.
 
 ## Method
 
-The code works according to the intention, successfully.
+The code works according to the intention.
 
 ## Completion
 
-Assignment was completed.
+Assignment completed.
